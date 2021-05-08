@@ -5,7 +5,7 @@ import styled from 'styled-components'
 export default function Header() {
     return (
         <Nav>
-            <Logo src='/images/logo.svg' />
+            <Logo src='https://secure-media.hotstarext.com/web-assets/prod/images/brand-logos/disney-hotstar-logo-dark.svg' />
             <Navmenu>
                 <a>
                     <img src="/images/home-icon.svg" />
@@ -33,13 +33,13 @@ export default function Header() {
                 </a>
 
                 <a>
-                    <img src="/images/movie-icon.svg" />
-                    <span>MOVIES</span>
+                    <img src="/images/series-icon.svg" />
+                    <span>SERIES</span>
                 </a>
 
             </Navmenu>
 
-            <UserImg src=""/>
+            <UserImg src="https://avatars.githubusercontent.com/u/74185224?v=4"/>
         </Nav>
     )
 }
@@ -53,17 +53,21 @@ const Nav = styled.nav`
 
 `
 const Logo = styled.img`
-    width:80px;
+    width:130px;
          
 `
 const Navmenu = styled.div`
 
-    display:flex;
+    display: flex;
+    flex: 1;
+    margin-left: 25px;
+    align-items: center;
 
     a {
         display:flex;
         align-items:center;
         padding: 0 12px;
+        cursor: pointer;
 
         img {
             height: 20px;
@@ -72,12 +76,15 @@ const Navmenu = styled.div`
 
         span {
             font-size: 13px;
-            letter-spacing: 1.42px;
+            letter-spacing: 2px;
         }
     }
 
 `
 
 const UserImg =styled.img`
-
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    cursor:pointer;
 `
